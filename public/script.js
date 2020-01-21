@@ -169,6 +169,7 @@ setInterval(
 		document.getElementById("score").innerHTML = "Score:" + score;
 
 		if(colide()) {
+			fetch(`/dead/${score}`);
 			alert("du dod du fick " + score + " poäng");
 			restart();
 		}
